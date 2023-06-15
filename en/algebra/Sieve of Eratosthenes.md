@@ -1,4 +1,5 @@
 # Sieve of Eratosthenes
+
 ```cpp
 vector<int> compute_primes(int n) {
     bool sieve[n + 1];
@@ -33,4 +34,4 @@ Starting from 2, check whether the current number in the sieve is marked as True
 The time complexity of this algorithm is *O(n log log n)*.
 
 Visualization of this algorithm:
-![](https://brestprog.by/topics/primesieve/eratosthenes.gif)
+![SoE](https://brestprog.by/topics/primesieve/eratosthenes.gif)
