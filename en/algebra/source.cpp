@@ -9,6 +9,7 @@ int lcd(int a, int b) {
 vector<int> compute_primes(int n) { // The sieve of Erotosthenes
     bool sieve[n + 1];    // sieve
     vector<int> primes;     // vector to which prime numbers will be added
+    primes.reserve(n);
     
     for (int i = 2; i <= n; i++) {   // Initially, all the numbers are not crossed out
         sieve[i] = true;

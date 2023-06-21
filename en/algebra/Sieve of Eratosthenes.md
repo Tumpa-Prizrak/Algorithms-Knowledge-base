@@ -3,6 +3,7 @@
 vector<int> compute_primes(int n) {
     bool sieve[n + 1];
     vector<int> primes;
+    primes.reserve(n);
     
     for (int i = 2; i <= n; i++) {
         sieve[i] = true;

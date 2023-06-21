@@ -6,9 +6,10 @@ int lcd(int a, int b) { // НОК
     return a / gcd(a, b) * b;
 }
  
-vector<int> compute_primes(int n) { //Решето эротосфена
+vector<int> compute_primes(int n) { //Решето Эратосфена
     bool sieve[n + 1];    //решето
     vector<int> primes;     //вектор, в который будут добавляться простые числа
+    primes.reserve(n);
     
     for (int i = 2; i <= n; i++) {   //Изначально все числа не вычеркнуты.
         sieve[i] = true;
