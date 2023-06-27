@@ -1,17 +1,32 @@
+#include <vector>
+using namespace std;
+
+/**
+ * @brief Greatest Common Divisor
+ * @return int 
+ */
 int gcd(int a, int b) {
     return b ? gcd(b, a % b) : a;
 }
- 
-int lcd(int a, int b) {
+
+/**
+ * @brief Least Common Multiple
+ * @return int 
+ */
+int lcm(int a, int b) {
     return a / gcd(a, b) * b;
 }
- 
-vector<int> compute_primes(int n) { // The sieve of Erotosthenes
+
+/**
+ * @brief The sieve of Erotosthenes
+ * @return std::vector<int> 
+ */
+vector<int> compute_primes(int n) {
     bool sieve[n + 1];    // sieve
     vector<int> primes;     // vector to which prime numbers will be added
     primes.reserve(n);
     
-    for (int i = 2; i <= n; i++) {   // Initially, all the numbers are not crossed out
+    for (int i = 2; i <= n; i++) {   // initially, all the numbers are not crossed out
         sieve[i] = true;
     }
  

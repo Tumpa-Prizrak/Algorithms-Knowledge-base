@@ -1,3 +1,6 @@
+#include <vector>
+using namespace std;
+
 int gcd(int a, int b) { //НОД
     return b ? gcd(b, a % b) : a;
 }
@@ -11,15 +14,15 @@ vector<int> compute_primes(int n) { //Решето Эратосфена
     vector<int> primes;     //вектор, в который будут добавляться простые числа
     primes.reserve(n);
     
-    for (int i = 2; i <= n; i++) {   //Изначально все числа не вычеркнуты.
+    for (int i = 2; i <= n; i++) {   // изначально все числа не вычеркнуты
         sieve[i] = true;
     }
  
     for (int i = 2; i <= n; i++) {
-        if (sieve[i]) {     //если i не вычеркнуто
+        if (sieve[i]) {     // если i не вычеркнуто
             primes.push_back(i);
             
-            for (int j = i * i; j <= n; j += i) {    //вычеркиваем все кратные числа начиная с i^2
+            for (int j = i * i; j <= n; j += i) {    // вычеркиваем все кратные числа начиная с i^2
                 sieve[j] = false;
             }
         }
