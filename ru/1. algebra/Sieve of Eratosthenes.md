@@ -1,4 +1,5 @@
 # Решето Эратосфена
+
 ```cpp
 vector<int> compute_primes(int n) {
     bool sieve[n + 1];
@@ -33,4 +34,4 @@ vector<int> compute_primes(int n) {
 Временная сложность этого алгоритма равна *O(n log log n)*.
 
 Визуализация данного алгоритма:
-![](https://brestprog.by/topics/primesieve/eratosthenes.gif)
+![РЭ](https://brestprog.by/topics/primesieve/eratosthenes.gif)
