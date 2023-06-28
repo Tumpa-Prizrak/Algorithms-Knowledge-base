@@ -44,11 +44,11 @@ void quickSort(int arr[], int low, int high)
 
 ## Вот ключевые моменты о Quicksort:
 
-- Сортировка Quicksort - это алгоритм "разделяй и властвуй". It picks an element as pivot and partitions the list around the pivot such that all elements with values less than the pivot come before it, and all elements with values greater than the pivot come after it.
+- Сортировка Quicksort - это алгоритм "разделяй и властвуй". Он выбирает элемент в качестве центрального и разбивает список вокруг него так, что все элементы со значениями меньше центрального идут перед ним, а все элементы со значениями больше центрального идут после него.
 
 - Это не стабильный алгоритм сортировки, то есть он не сохраняет исходный порядок элементов с одинаковыми ключами.
 
-- средняя временная сложность составляет O(nlogn), а наихудшая временная сложность - O(n2). The space complexity is O(logn) due to recursion stack.
+- средняя временная сложность составляет O(nlogn), а наихудшая временная сложность - O(n2). Пространственная сложность составляет O(logn) из-за стека рекурсий.
 
 - Quicksort является хорошим выбором, когда:
     - Необходим быстрый алгоритм сортировки.
